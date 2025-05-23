@@ -1,6 +1,13 @@
 ﻿@page "/weather"
 @using BlazorApp2.Entities
 @attribute [StreamRendering]
+@using BlazorApp2.Models
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.QuickGrid
+@inject IDbContextFactory<DBADGIIContext> DbFactory
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
 <h1>Contribuyente</h1>
 
@@ -41,6 +48,17 @@ else
 
 
 @code {
+
+#nullable disable
+    private DBADGIIContext context = default!;
+
+        public async ValueTask DisposeAsync()
+        {
+            // Dispose the context
+            await context.DisposeAsync();
+        }
+    
+
     private WeatherForecast[]? forecasts;
 
     protected override async Task OnInitializedAsync()

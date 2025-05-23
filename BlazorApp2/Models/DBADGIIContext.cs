@@ -13,13 +13,13 @@ public partial class DBADGIIContext : DbContext
     {
     }
 
-    public virtual DbSet<Comprobante> Comprobante { get; set; }
+    public virtual DbSet<Comprobante> Comprobantes { get; set; }
 
     public virtual DbSet<Contribuyente> Contribuyentes { get; set; }
 
-    public virtual DbSet<Estado> Estado { get; set; }
+    public virtual DbSet<Estado> Estados { get; set; }
 
-    public virtual DbSet<Tipo> Tipo { get; set; }
+    public virtual DbSet<Tipo> Tipos { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
