@@ -1,0 +1,116 @@
+﻿@page "/encuesta"
+@rendermode InteractiveServer
+@using System.ComponentModel.DataAnnotations
+@using BlazorApp2.Entities
+@inject NavigationManager NavigationManager
+
+
+<h3>Registro de Contribuyentes</h3>
+
+<EditForm Model="nuevoContribuyente" OnValidSubmit="AgregarContribuyente" > 
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <InputText @bind-Value="nuevoContribuyente.Nombre" class="form-control"
+                   oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').slice(0, 20);" />
+        <ValidationMessage For="@(() => nuevoContribuyente.Nombre)" />
+    </div>
+
+
+    <div class="mb-3">
+        <label>RNC/Cédula:</label>
+        <InputText @bind-Value="nuevoContribuyente.RncCedula"
+        class="form-control"
+        type="text"
+        pattern="\d{10}"
+        maxlength="10"
+        title="Debe ingresar exactamente 10 dígitos."
+        oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+        <ValidationMessage For="@(() => nuevoContribuyente.RncCedula)" />
+    </div>
+
+
+    <div class="mb-3">
+        <label>Tipo:</label>
+        <InputSelect @bind-Value="nuevoContribuyente.Tipo" class="form-control">
+            <option value="">Seleccione</option>
+            <option value="Persona Física">Persona Física</option>
+            <option value="Persona Jurídica">Persona Jurídica</option>
+        </InputSelect>
+        <ValidationMessage For="@(() => nuevoContribuyente.Tipo)" />
+    </div>
+
+    <div class="mb-3">
+        <label>Estado:</label>
+        <InputSelect @bind-Value="nuevoContribuyente.Estatus" class="form-control">
+            <option value="">Seleccione</option>
+            <option value="Persona Inactiva">Persona Inactiva</option>
+            <option value="Persona activa">Persona activa</option>
+        </InputSelect>
+        <ValidationMessage For="@(() => nuevoContribuyente.Estatus)" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Agregar</button>
+    @*     <NavLink class="nav-link" href="/weather">
+        <button type="submit"  class="btn btn-primary">Agregar</button>
+    </NavLink> *@
+
+</EditForm>
+
+@if (mostrarMensaje)
+{
+    <div class="alert alert-success mt-2">@mensaje</div>
+}
+
+@if (contribuyentes.Any())
+{
+    <h4 class="mt-4">Contribuyentes Registrados</h4>
+    <ul>
+        @foreach (var c in contribuyentes)
+        {
+            <li>@c.Nombre - @c.RncCedula - @c.Tipo - @c.Estatus</li>
+        }
+    </ul>
+}
+
+@code {
+    private Contribuyente nuevoContribuyente = new();
+    public List<Contribuyente> contribuyentes = new();
+    private string mensaje = "";
+    private bool mostrarMensaje = false;
+
+    private void AgregarContribuyente()
+    {
+        // Agregar el nuevo contribuyente a la lista
+        AgregarNuevoContribuyente();
+
+        // Mostrar mensaje de éxito
+        MostrarMensaje("✅ Contribuyente agregado correctamente");
+
+        Task.Delay(30000000);
+        // Navegar a la ruta "weather"
+        NavigationManager.NavigateTo("/weather");
+    }
+
+    private void AgregarNuevoContribuyente()
+    {
+        contribuyentes.Add(new Contribuyente
+    {
+        Nombre = nuevoContribuyente.Nombre,
+        RncCedula = nuevoContribuyente.RncCedula,
+        Tipo = nuevoContribuyente.Tipo,
+        Estatus = nuevoContribuyente.Estatus
+    });
+
+    // Reiniciar el objeto nuevoContribuyente
+    nuevoContribuyente = new();
+}
+
+private void MostrarMensaje(string mensajeTexto)
+{
+    mensaje = mensajeTexto;
+    mostrarMensaje = true;
+}
+}

@@ -1,0 +1,71 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>IncrementCounter</PageTitle>
+
+<style>
+    body {
+        background-color: aliceblue; /* Fondo negro */
+        color: black; /* Color de texto blanco */
+    }
+
+    .btn-primary {
+        background-color: black; /* Color del botón */
+    }
+
+        .btn-primary:hover {
+            background-color: #6063; /* Azul más oscuro en hover */
+            border-color: #6063;
+        }
+
+    .alert {
+        color: red;
+        margin-top: 10px;
+    }
+</style>
+
+<h2>Contadores:</h2>
+
+<p>El actual: @currentCount</p>
+<button class="btn btn-primary" @onclick="IncrementCount">Incrementar</button>
+<button class="btn btn-primary" @onclick="DecrementCount">Disminuir</button>
+
+@if (!string.IsNullOrEmpty(notificationMessage))
+{
+    <div class="alert">@notificationMessage</div>
+}
+
+@code {
+    private int currentCount = 0;
+    private const int MaxCount = 100; // Cambia este valor según sea necesario
+    private const int MinCount = 0; // Cambia este valor según sea necesario
+    private string notificationMessage;
+
+    private void IncrementCount()
+    {
+        if (currentCount < MaxCount)
+        {
+            currentCount++;
+            notificationMessage = null; // Limpiar mensaje
+        }
+        else
+        {
+            // Notificación de máximo
+            notificationMessage = "Que bien has llegado al maximo 100.";
+        }
+    }
+
+    private void DecrementCount()
+    {
+        if (currentCount > MinCount)
+        {
+            currentCount--;
+            notificationMessage = null; // Limpiar mensaje
+        }
+        else
+        {
+            // Notificación de mínimo
+            notificationMessage = "Que has llegado al minimo.";
+        }
+    }
+}
