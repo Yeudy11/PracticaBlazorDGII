@@ -1,0 +1,50 @@
+﻿@page "/estatus"
+@rendermode InteractiveServer
+@inject IEstatusRepository estatusRepository
+
+@using BlazorApp2.DTO
+@using BlazorApp2.Entities
+@using BlazorApp2.Repository
+
+<h3>Registrar Estatus</h3>
+
+<EditForm Model="dto" OnValidSubmit="AgregarEstatusAsync" 
+    AdditionalAttributes="@(new Dictionary<string, object> { ["name"] = "estatusForm" })">
+    <DataAnnotationsValidator />
+    @* <ValidationSummary /> *@
+
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <InputText @bind-Value="dto.Nombre" class="form-control" />
+        <ValidationMessage For="@(() => dto.Nombre)" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Agregar</button>
+</EditForm>
+
+@if (mensajeVisible)
+{
+    <div class="alert alert-success mt-2">@mensaje</div>
+}
+
+@code {
+    private CrearEstatusDTO dto = new();
+    private string mensaje = string.Empty;
+    private bool mensajeVisible = false;
+
+    private async Task AgregarEstatusAsync()
+    {
+        // Convertir el DTO a entidad
+        var estatus = new Entities.Estatus
+        {
+            Nombre = dto.Nombre
+        };
+
+        await estatusRepository.Agregar(estatus);
+
+        mensaje = "✅ Estatus agregado correctamente";
+        mensajeVisible = true;
+
+        dto = new(); // Limpiar formulario
+    }
+}

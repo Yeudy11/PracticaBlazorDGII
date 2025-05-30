@@ -1,0 +1,115 @@
+﻿@page "/tipo"
+@rendermode InteractiveServer
+@inject ITipoRepository tipoRepository
+
+@using BlazorApp2.DTO
+@using BlazorApp2.Entities
+@using BlazorApp2.Repository
+
+<h3>Registrar Tipo</h3>
+
+<EditForm Model="dto" OnValidSubmit="AgregarTipoAsync"
+    AdditionalAttributes="@(new Dictionary<string, object> { ["name"] = "tipoForm" })">
+    <DataAnnotationsValidator />
+    @* <ValidationSummary /> *@
+
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <InputText @bind-Value="dto.Nombre" class="form-control" />
+        <ValidationMessage For="@(() => dto.Nombre)" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Agregar</button>
+</EditForm>
+
+@if (mensajeVisible)
+{
+    <div class="alert alert-success mt-2">@mensaje</div>
+}
+
+@if (tipos == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else if (!tipos.Any())
+{
+    <p>No hay tipos registrados.</p>
+}
+else
+{
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tipo in tipos)
+            {
+                <tr>
+                    <td>@tipo.Id</td>
+                    <td>@tipo.Nombre</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @onclick="() => ConfirmarEliminacion(tipo)">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private CrearTipoDTO dto = new();
+    private string mensaje = string.Empty;
+    private bool mensajeVisible = false;
+    private List<Entities.Tipo> tipos = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarTiposAsync();
+    }
+
+    public async Task CargarTiposAsync()
+    {
+        tipos = await tipoRepository.Listar();
+    }
+
+    private async Task AgregarTipoAsync()
+    {
+        // Convertir el DTO a entidad
+        var tipo = new Entities.Tipo
+        {
+            Nombre = dto.Nombre
+        };
+
+        await tipoRepository.Agregar(tipo);
+
+        mensaje = "✅ Tipo agregado correctamente";
+        mensajeVisible = true;
+
+        dto = new(); // Limpiar formulario
+        await CargarTiposAsync();
+    }
+
+    private async Task ConfirmarEliminacion(Entities.Tipo tipo)
+    {
+        if (await MostrarConfirmacion($"¿Estás seguro que deseas eliminar '{tipo.Nombre}'?"))
+        {
+            await tipoRepository.Eliminar(tipo);
+            await CargarTiposAsync();
+        }
+    }
+
+    private async Task<bool> MostrarConfirmacion(string mensaje)
+    {
+        // Puedes usar una librería de confirmación JS aquí si deseas.
+        // En Blazor Server, puedes usar JS interop o simplemente usar una confirmación básica:
+        return await Task.FromResult(
+            await JS.InvokeAsync<bool>("confirm", mensaje)
+        );
+    }
+
+    [Inject] IJSRuntime JS { get; set; } = default!;
+}

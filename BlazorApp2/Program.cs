@@ -1,7 +1,7 @@
-﻿using System.Security.Cryptography;
-using BlazorApp2.Components;
+﻿using BlazorApp2.Components;
 using Microsoft.EntityFrameworkCore;
-using BlazorApp2.Models;
+using BlazorApp2;
+using BlazorApp2.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 #if DEBUG
-builder.Services.AddDbContextFactory<DBADGIIContext>(options =>
+builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString)
            .EnableSensitiveDataLogging());
 #else
@@ -23,7 +23,8 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddQuickGridEntityFrameworkAdapter();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
+builder.Services.AddTransient<ITipoRepository, TipoRepository>();
+builder.Services.AddTransient<IEstatusRepository, EstatusRepository>();
 
 var app = builder.Build();
 

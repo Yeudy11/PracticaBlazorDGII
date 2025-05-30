@@ -1,6 +1,105 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Inicio</PageTitle>
 
-<h1>Bienvenido</h1>
-<p>Welcome to your new app.</p>
+<div class="hero">
+    <div class="overlay">
+        <div class="hero-content">
+            <div class="main-text">
+                <h5>CONCURSO</h5>
+                <h1>Pide tu Factura Electrónica y Gana</h1>
+                <a href="https://www.dgii.gov.do/Paginas/default.aspx" class="btn-info" target="_blank">
+                    MÁS INFORMACIÓN
+                </a
+            </div>
+
+            <div class="side-info">
+                <p><strong class="tag">DEUDAS FIRMES</strong><br />Ya está disponible el listado de deudas firmes a marzo 2025</p>
+                <p><strong class="tag">RESOLUCIÓN DDG- AR1-2025-00001</strong><br />Multiplicadores y ajustes cierre fiscal 2024</p>
+                <p><strong class="tag">AVISO</strong><br />Publicación de Deudas Tributarias</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+    background-image: url('/images/fondo.jpg'); /* imagen aqui */  
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura para contraste */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    color: white;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.main-text {
+    max-width: 600px;
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-text h5 {
+    color: #83caff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.btn-info {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #ddd;
+}
+
+.side-info {
+    max-width: 400px;
+    padding-left: 2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.side-info .tag {
+    color: #83caff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+</style>
+
+
+

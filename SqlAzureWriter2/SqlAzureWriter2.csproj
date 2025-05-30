@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.AspNetCore.Components.QuickGrid.8.0.0\build\Microsoft.AspNetCore.Components.QuickGrid.props" Condition="Exists('..\packages\Microsoft.AspNetCore.Components.QuickGrid.8.0.0\build\Microsoft.AspNetCore.Components.QuickGrid.props')" />
   <Import Project="StormProject.props" />
   <Import Project="$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.props" Condition="Exists('$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -14,6 +15,8 @@
     <AssemblyName>SqlAzureWriterStormApplication</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,14 +51,14 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.5\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=9.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.9.0.5\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.8.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.5\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Logging, Version=9.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Logging.9.0.5\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Logging, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.8.0.0\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=9.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.9.0.5\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
@@ -162,6 +165,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.props')" Text="$([System.String]::Format('$(ErrorText)', '$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.props'))" />
     <Error Condition="!Exists('$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.AspNetCore.Components.QuickGrid.8.0.0\build\Microsoft.AspNetCore.Components.QuickGrid.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.AspNetCore.Components.QuickGrid.8.0.0\build\Microsoft.AspNetCore.Components.QuickGrid.props'))" />
   </Target>
   <Import Project="$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.targets" Condition="Exists('$(NugetPackagePath)\Microsoft.SCP.Net.SDK.0.10.0.6\build\Microsoft.SCP.Net.SDK.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
