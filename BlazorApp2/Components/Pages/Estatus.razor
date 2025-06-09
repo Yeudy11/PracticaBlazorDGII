@@ -8,18 +8,22 @@
 
 <h3>Registrar Estatus</h3>
 
-<EditForm Model="dto" OnValidSubmit="AgregarEstatusAsync" 
-    AdditionalAttributes="@(new Dictionary<string, object> { ["name"] = "estatusForm" })">
+<EditForm Model="dto" OnValidSubmit="AgregarEstatusAsync"
+          AdditionalAttributes="@(new Dictionary<string, object> { ["name"] = "estatusForm" })">
     <DataAnnotationsValidator />
     @* <ValidationSummary /> *@
 
-    <div class="mb-3">
-        <label>Nombre:</label>
-        <InputText @bind-Value="dto.Nombre" class="form-control" />
-        <ValidationMessage For="@(() => dto.Nombre)" />
-    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <label>Nombre:</label>
+                <InputText @bind-Value="dto.Nombre" class="form-control" />
+                <ValidationMessage For="@(() => dto.Nombre)" />
+            </div>
 
-    <button type="submit" class="btn btn-success">Agregar</button>
+            <button type="submit" class="btn btn-success">Agregar</button>
+        </div>
+    </div>
 </EditForm>
 
 @if (mensajeVisible)

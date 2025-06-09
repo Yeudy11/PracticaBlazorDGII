@@ -1,107 +1,80 @@
 ﻿@page "/encuesta"
 @rendermode InteractiveServer
 @using System.ComponentModel.DataAnnotations
+@using BlazorApp2.DTO
 @using BlazorApp2.Entities
 @using BlazorApp2.Repository
 @inject NavigationManager NavigationManager
 @inject ITipoRepository tipoRepository
 @inject IEstatusRepository estatusRepository
-
+@inject IContribuyenteRepository contribuyenteRepository
 
 <h3>Registro de Contribuyentes</h3>
 
-<EditForm Model="nuevoContribuyente" OnValidSubmit="AgregarContribuyente" > 
+<EditForm Model="dto" OnValidSubmit="AgregarContribuyenteAsync"
+          AdditionalAttributes="@(new Dictionary<string, object> { ["name"] = "contribuyenteForm" })">
     <DataAnnotationsValidator />
-    <ValidationSummary />
 
-    <div class="mb-3">
-        <label>Nombre:</label>
-        <InputText @bind-Value="nuevoContribuyente.Nombre" class="form-control"
-                   oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').slice(0, 20);" />
-        <ValidationMessage For="@(() => nuevoContribuyente.Nombre)" />
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <label>Nombre:</label>
+                <InputText @bind-Value="dto.Nombre" class="form-control"
+                           oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '').slice(0, 50);" />
+                <ValidationMessage For="@(() => dto.Nombre)" />
+            </div>
+
+            <div class="mb-3">
+                <label>RNC/Cédula:</label>
+                <InputText @bind-Value="dto.RncCedula"
+                           class="form-control"
+                           maxlength="11"
+                           title="Debe tener 9 o 11 dígitos numéricos."
+                           oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+                <ValidationMessage For="@(() => dto.RncCedula)" />
+            </div>
+
+            <div class="mb-3">
+                <label>Tipo:</label>
+                <InputSelect @bind-Value="dto.TipoId" class="form-control">
+                    <option value="">Seleccione</option>
+                    @foreach (var tipo in tipos)
+                    {
+                        <option value="@tipo.Id">@tipo.Nombre</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => dto.TipoId)" />
+            </div>
+
+            <div class="mb-3">
+                <label>Estado:</label>
+                <InputSelect @bind-Value="dto.EstatusId" class="form-control">
+                    <option value="">Seleccione</option>
+                    @foreach (var estado in estados)
+                    {
+                        <option value="@estado.Id">@estado.Nombre</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => dto.EstatusId)" />
+            </div>
+
+            <button type="submit" class="btn btn-success">Agregar</button>
+        </div>
     </div>
-
-
-    <div class="mb-3">
-        <label>RNC/Cédula:</label>
-        <InputText @bind-Value="nuevoContribuyente.RncCedula"
-        class="form-control"
-        type="text"
-        pattern="\d{10}"
-        maxlength="10"
-        title="Debe ingresar exactamente 10 dígitos."
-        oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
-        <ValidationMessage For="@(() => nuevoContribuyente.RncCedula)" />
-    </div>
-
-
-    <div class="mb-3">
-        <label>Tipo:</label>
-        <InputSelect @bind-Value="nuevoContribuyente.Tipo" class="form-control">
-            <option value="">Seleccione</option>
-            @foreach (var tipo in tipos)
-            {
-                <option value="@tipo.Nombre">@tipo.Nombre</option>
-            }
-        </InputSelect>
-        <ValidationMessage For="@(() => nuevoContribuyente.Tipo)" />
-    </div>
-
-    <div class="mb-3">
-        <label>Estado:</label>
-        <InputSelect @bind-Value="nuevoContribuyente.Estatus" class="form-control">
-            <option value="">Seleccione</option>
-            @foreach (var estado in estados)
-            {
-                <option value="@estado.Nombre">@estado.Nombre</option>
-            }
-        </InputSelect>
-        <ValidationMessage For="@(() => nuevoContribuyente.Estatus)" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Agregar</button>
-    @*     <NavLink class="nav-link" href="/weather">
-        <button type="submit"  class="btn btn-primary">Agregar</button>
-    </NavLink> *@
-
 </EditForm>
+
 
 @if (mostrarMensaje)
 {
-    <div class="alert alert-success mt-2">@mensaje</div>
-}
-
-@if (contribuyentes.Any())
-{
-    <h4 class="mt-4">Contribuyentes Registrados</h4>
-    <ul>
-        @foreach (var c in contribuyentes)
-        {
-            <li>@c.Nombre - @c.RncCedula - @c.Tipo - @c.Estatus</li>
-        }
-    </ul>
+    <div class="alert alert-success mt-3">@mensaje</div>
 }
 
 @code {
     private List<Entities.Tipo> tipos = new();
     private List<Entities.Estatus> estados = new();
-    private Contribuyente nuevoContribuyente = new();
-    public List<Contribuyente> contribuyentes = new();
+    private CrearContribuyenteDTO dto = new();
     private string mensaje = "";
     private bool mostrarMensaje = false;
-
-    private void AgregarContribuyente()
-    {
-        // Agregar el nuevo contribuyente a la lista
-        AgregarNuevoContribuyente();
-
-        // Mostrar mensaje de éxito
-        MostrarMensaje("✅ Contribuyente agregado correctamente");
-
-        Task.Delay(30000000);
-        // Navegar a la ruta "weather"
-        NavigationManager.NavigateTo("/weather");
-    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -109,42 +82,25 @@
         estados = await estatusRepository.Listar();
     }
 
-    private void AgregarNuevoContribuyente()
+    private async Task AgregarContribuyenteAsync()
     {
-        contribuyentes.Add(new Contribuyente
-    {
-        Nombre = nuevoContribuyente.Nombre,
-        RncCedula = nuevoContribuyente.RncCedula,
-        Tipo = nuevoContribuyente.Tipo,
-        Estatus = nuevoContribuyente.Estatus
-    });
-
-        // Reiniciar el objeto nuevoContribuyente
-        nuevoContribuyente = new();
-    }
-
-    private void MostrarMensaje(string mensajeTexto)
-    {
-        mensaje = mensajeTexto;
-        mostrarMensaje = true;
-    }
-    @code
-    {
-        public class Contribuyente
+        var contribuyente = new Entities.Contribuyente
         {
-            [Required(ErrorMessage = "El nombre es obligatorio.")]
-            [StringLength(20, ErrorMessage = "El nombre no puede tener más de 20 caracteres.")]
-            public string Nombre { get; set; }
+            Nombre = dto.Nombre,
+            RncCedula = dto.RncCedula,
+            TipoId = dto.TipoId,
+            EstatusId = dto.EstatusId
+        };
 
-            [Required(ErrorMessage = "El rnc/cédula es obligatorio.")]
-            [RegularExpression(@"^\d{10}$", ErrorMessage = "Debe ingresar exactamente 10 dígitos.")]
-            public string RncCedula { get; set; }
+        await contribuyenteRepository.Agregar(contribuyente);
 
-            [Required(ErrorMessage = "El tipo es obligatorio.")]
-            public string Tipo { get; set; }
+        mensaje = "✅ Contribuyente agregado correctamente";
+        mostrarMensaje = true;
 
-            [Required(ErrorMessage = "El estado es obligatorio.")]
-            public string Estatus { get; set; }
-        }
-}
+        dto = new(); // Limpiar formulario
+        StateHasChanged(); // Forzar actualización visual
+
+        await Task.Delay(2000);
+        NavigationManager.NavigateTo("/contribuyentes");
+    }
 }

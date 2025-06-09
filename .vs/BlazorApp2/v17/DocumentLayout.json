@@ -3,32 +3,107 @@
   "WorkspaceRootPath": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\encuesta.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\encuesta.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\tipo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\tipo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\estatus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\estatus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\tipo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\tipo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\repository\\estatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\repository\\estatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\encuesta.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\encuesta.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\contribuyentes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\contribuyentes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\dto\\crearcontribuyentedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\dto\\crearcontribuyentedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\repository\\contribuyenterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\repository\\contribuyenterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\entities\\contribuyente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\entities\\contribuyente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\dto\\creartipodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\dto\\creartipodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\repository\\tiporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\repository\\tiporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\entities\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\entities\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\repository\\icontribuyenterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\repository\\icontribuyenterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\repository\\itiporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\repository\\itiporepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\smilt\\source\\repos\\blazorapp2\\blazorapp2\\migrations\\20250609003852_contribuyentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B357A32-E566-4E20-8BA6-0DE2DCBBBB08}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\migrations\\20250609003852_contribuyentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +113,335 @@
       "DocumentGroups": [
         {
           "DockedWidth": 9,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Estatus.razor",
-              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Estatus.razor",
-              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Estatus.razor",
-              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Estatus.razor",
-              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Estatus.razor",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAF0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T00:07:53.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\appsettings.json",
-              "RelativeDocumentMoniker": "BlazorApp2\\appsettings.json",
-              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\appsettings.json",
-              "RelativeToolTip": "BlazorApp2\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-08T23:52:23.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "BlazorApp2\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\appsettings.Development.json",
-              "RelativeToolTip": "BlazorApp2\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-08T23:52:20.133Z",
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T02:05:26.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Encuesta.razor",
-              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Encuesta.razor",
-              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Encuesta.razor",
-              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Encuesta.razor",
-              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Encuesta.razor",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T23:43:09.571Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\appsettings.json",
+              "RelativeDocumentMoniker": "BlazorApp2\\appsettings.json",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\appsettings.json",
+              "RelativeToolTip": "BlazorApp2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-09T02:17:52.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Tipo.razor",
-              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Tipo.razor",
-              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Tipo.razor",
-              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Tipo.razor",
-              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Tipo.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\App.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\App.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T16:59:57.399Z",
+              "WhenOpened": "2025-06-09T02:06:18.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\_Imports.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T02:05:49.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CrearContribuyenteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\DTO\\CrearContribuyenteDTO.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\DTO\\CrearContribuyenteDTO.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\DTO\\CrearContribuyenteDTO.cs",
+              "RelativeToolTip": "BlazorApp2\\DTO\\CrearContribuyenteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:41:42.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Counter.razor",
-              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Counter.razor",
-              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Counter.razor",
-              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Counter.razor",
-              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Counter.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
+              "Title": "Encuesta.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Encuesta.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Encuesta.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Encuesta.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Encuesta.razor",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T01:59:11.522Z",
+              "WhenOpened": "2025-06-09T00:23:35.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tipo.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Tipo.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Tipo.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Tipo.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Tipo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T01:36:06.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Estatus.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Estatus.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Estatus.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Estatus.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Estatus.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T01:15:24.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Routes.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T02:06:21.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EstatusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\EstatusRepository.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Repository\\EstatusRepository.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\EstatusRepository.cs",
+              "RelativeToolTip": "BlazorApp2\\Repository\\EstatusRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:29:13.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T02:06:32.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T02:06:30.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Contribuyentes.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Contribuyentes.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Contribuyentes.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Contribuyentes.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Contribuyentes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T00:23:19.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Component.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Component.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Component.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Component.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Component.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T00:23:11.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAPESAAAAAAAAAAAjwAUTAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-09T01:58:26.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "BlazorApp2\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T00:23:14.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ContribuyenteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\ContribuyenteRepository.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Repository\\ContribuyenteRepository.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\ContribuyenteRepository.cs",
+              "RelativeToolTip": "BlazorApp2\\Repository\\ContribuyenteRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:26:33.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CrearTipoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\DTO\\CrearTipoDTO.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\DTO\\CrearTipoDTO.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\DTO\\CrearTipoDTO.cs",
+              "RelativeToolTip": "BlazorApp2\\DTO\\CrearTipoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:41:58.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Contribuyente.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Entities\\Contribuyente.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Entities\\Contribuyente.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Entities\\Contribuyente.cs",
+              "RelativeToolTip": "BlazorApp2\\Entities\\Contribuyente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:43:30.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BlazorApp2\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:39:10.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250609003852_Contribuyentes.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Migrations\\20250609003852_Contribuyentes.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Migrations\\20250609003852_Contribuyentes.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Migrations\\20250609003852_Contribuyentes.cs",
+              "RelativeToolTip": "BlazorApp2\\Migrations\\20250609003852_Contribuyentes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:38:53.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Program.cs",
               "RelativeDocumentMoniker": "BlazorApp2\\Program.cs",
               "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Program.cs",
               "RelativeToolTip": "BlazorApp2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T12:43:11.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T00:36:15.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TipoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\TipoRepository.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Repository\\TipoRepository.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\TipoRepository.cs",
+              "RelativeToolTip": "BlazorApp2\\Repository\\TipoRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:30:17.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Tipo.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Entities\\Tipo.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Entities\\Tipo.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Entities\\Tipo.cs",
+              "RelativeToolTip": "BlazorApp2\\Entities\\Tipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:27:13.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ITipoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\ITipoRepository.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Repository\\ITipoRepository.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\ITipoRepository.cs",
+              "RelativeToolTip": "BlazorApp2\\Repository\\ITipoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:25:07.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IContribuyenteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\IContribuyenteRepository.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Repository\\IContribuyenteRepository.cs",
+              "ToolTip": "C:\\Users\\smilt\\source\\repos\\BlazorApp2\\BlazorApp2\\Repository\\IContribuyenteRepository.cs",
+              "RelativeToolTip": "BlazorApp2\\Repository\\IContribuyenteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T00:24:15.903Z"
             }
           ]
         }

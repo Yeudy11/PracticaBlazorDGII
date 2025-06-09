@@ -9,17 +9,20 @@
 <h3>Registrar Tipo</h3>
 
 <EditForm Model="dto" OnValidSubmit="AgregarTipoAsync"
-    AdditionalAttributes="@(new Dictionary<string, object> { ["name"] = "tipoForm" })">
+          AdditionalAttributes="@(new Dictionary<string, object> { ["name"] = "tipoForm" })">
     <DataAnnotationsValidator />
-    @* <ValidationSummary /> *@
 
-    <div class="mb-3">
-        <label>Nombre:</label>
-        <InputText @bind-Value="dto.Nombre" class="form-control" />
-        <ValidationMessage For="@(() => dto.Nombre)" />
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <label>Nombre:</label>
+                <InputText @bind-Value="dto.Nombre" class="form-control" />
+                <ValidationMessage For="@(() => dto.Nombre)" />
+            </div>
+
+            <button type="submit" class="btn btn-success">Agregar</button>
+        </div>
     </div>
-
-    <button type="submit" class="btn btn-success">Agregar</button>
 </EditForm>
 
 @if (mensajeVisible)

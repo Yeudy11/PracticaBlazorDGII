@@ -25,6 +25,7 @@ builder.Services.AddQuickGridEntityFrameworkAdapter();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddTransient<ITipoRepository, TipoRepository>();
 builder.Services.AddTransient<IEstatusRepository, EstatusRepository>();
+builder.Services.AddTransient<IContribuyenteRepository, ContribuyenteRepository>();
 
 var app = builder.Build();
 

@@ -1,0 +1,91 @@
+﻿@page "/contribuyentes"
+@rendermode InteractiveServer
+
+@using BlazorApp2.Entities
+@using BlazorApp2.Repository
+@inject IContribuyenteRepository contribuyenteRepository
+
+<h1>Contribuyentes</h1>
+
+<div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+    <NavLink class="nav-link" href="/encuesta">
+        <button class="btn btn-primary">Agregar</button>
+    </NavLink>
+</div>
+
+@if (contribuyentes == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else if (!contribuyentes.Any())
+{
+    <p>No hay contribuyentes registrados.</p>
+}
+else
+{
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>RNC / Cédula</th>
+                <th>Tipo</th>
+                <th>Estatus</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in contribuyentes)
+            {
+                <tr>
+                    <td>@c.Nombre</td>
+                    <td>@c.RncCedula</td>
+                    <td>@c.Tipo.Nombre</td>
+                    <td>@c.Estatus.Nombre</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @onclick="() => ConfirmarEliminacion(c)">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (mensajeVisible)
+{
+    <div class="alert alert-success mt-2">@mensaje</div>
+}
+
+@code {
+    private List<Contribuyente> contribuyentes = new();
+    private string mensaje = string.Empty;
+    private bool mensajeVisible = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarContribuyentesAsync();
+    }
+
+    private async Task CargarContribuyentesAsync()
+    {
+        contribuyentes = await contribuyenteRepository.Listar();
+    }
+
+    private async Task ConfirmarEliminacion(Contribuyente c)
+    {
+        if (await MostrarConfirmacion($"¿Estás seguro que deseas eliminar a '{c.Nombre}'?"))
+        {
+            await contribuyenteRepository.Eliminar(c);
+            await CargarContribuyentesAsync();
+
+            mensaje = "✅ Contribuyente eliminado correctamente";
+            mensajeVisible = true;
+        }
+    }
+
+    private async Task<bool> MostrarConfirmacion(string mensaje)
+    {
+        return await JS.InvokeAsync<bool>("confirm", mensaje);
+    }
+
+    [Inject] IJSRuntime JS { get; set; } = default!;
+}
