@@ -27,10 +27,54 @@
     <div class="alert alert-success mt-2">@mensaje</div>
 }
 
+@if (estados == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else if (!estados.Any())
+{
+    <p>No hay estados registrados.</p>
+}
+else
+{
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tipo in estados)
+            {
+                <tr>
+                    <td>@tipo.Id</td>
+                    <td>@tipo.Nombre</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @onclick="() => ConfirmarEliminacion(tipo)">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
 @code {
     private CrearEstatusDTO dto = new();
     private string mensaje = string.Empty;
     private bool mensajeVisible = false;
+    private List<Entities.Estatus> estados = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CargarEstadosAsync();
+    }
+
+    public async Task CargarEstadosAsync()
+    {
+        estados = await estatusRepository.Listar();
+    }
 
     private async Task AgregarEstatusAsync()
     {
@@ -46,5 +90,26 @@
         mensajeVisible = true;
 
         dto = new(); // Limpiar formulario
+        await CargarEstadosAsync();
     }
+
+    private async Task ConfirmarEliminacion(Entities.Estatus estatus)
+    {
+        if (await MostrarConfirmacion($"¿Estás seguro que deseas eliminar '{estatus.Nombre}'?"))
+        {
+            await estatusRepository.Eliminar(estatus);
+            await CargarEstadosAsync();
+        }
+    }
+
+    private async Task<bool> MostrarConfirmacion(string mensaje)
+    {
+        // Puedes usar una librería de confirmación JS aquí si deseas.
+        // En Blazor Server, puedes usar JS interop o simplemente usar una confirmación básica:
+        return await Task.FromResult(
+            await JS.InvokeAsync<bool>("confirm", mensaje)
+        );
+    }
+
+    [Inject] IJSRuntime JS { get; set; } = default!;
 }

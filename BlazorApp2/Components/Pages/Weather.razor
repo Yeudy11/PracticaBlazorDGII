@@ -17,34 +17,34 @@
     <p><em>Loading...</em></p>
 }
 @* @if ()  *@
-else
+
+ else
 {
-    <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
-        <NavLink class="nav-link" href="/encuesta">
-            <button class="btn btn-primary" @onclick="HandleButtonClick">Agregar</button>
-        </NavLink>
-    </div>
+<div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+    <NavLink class="nav-link" href="/encuesta">
+        <button class="btn btn-primary" @onclick="HandleButtonClick">Agregar</button>
+    </NavLink>
+</div>
 
-    <table class="table mt-3">
-        <thead>
-            <tr>
-                <th>NOMBRE</th>
-                <th>Rnc cedula</th>
-                <th>Tipo</th>
-                <th>Estatus</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Juan Pérez</td>
-                <td>001-234567-8</td>
-                <td>Persona activa</td>
-                <td>Activo</td>
-            </tr>
-        </tbody>
-    </table>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>NOMBRE</th>
+            <th>Rnc cedula</th>
+            <th>Tipo</th>
+            <th>Estatus</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Juan Pérez</td>
+            <td>001-234567-8</td>
+            <td>Persona activa</td>
+            <td>Activo</td>
+        </tr>
+    </tbody>
+</table>
 }
-
 
 @code {
 

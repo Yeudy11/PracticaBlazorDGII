@@ -11,7 +11,7 @@ namespace BlazorApp2.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Estatus",
+                name: "Estatuses",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -20,7 +20,7 @@ namespace BlazorApp2.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Estatus", x => x.Id);
+                    table.PrimaryKey("PK_Estatuses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -51,9 +51,9 @@ namespace BlazorApp2.Migrations
                 {
                     table.PrimaryKey("PK_Contribuyentes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Contribuyentes_Estatus_EstatusId",
+                        name: "FK_Contribuyentes_Estatuses_EstatusId",
                         column: x => x.EstatusId,
-                        principalTable: "Estatus",
+                        principalTable: "Estatuses",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -82,7 +82,7 @@ namespace BlazorApp2.Migrations
                 name: "Contribuyentes");
 
             migrationBuilder.DropTable(
-                name: "Estatus");
+                name: "Estatuses");
 
             migrationBuilder.DropTable(
                 name: "Tipos");

@@ -2,7 +2,10 @@
 @rendermode InteractiveServer
 @using System.ComponentModel.DataAnnotations
 @using BlazorApp2.Entities
+@using BlazorApp2.Repository
 @inject NavigationManager NavigationManager
+@inject ITipoRepository tipoRepository
+@inject IEstatusRepository estatusRepository
 
 
 <h3>Registro de Contribuyentes</h3>
@@ -36,8 +39,10 @@
         <label>Tipo:</label>
         <InputSelect @bind-Value="nuevoContribuyente.Tipo" class="form-control">
             <option value="">Seleccione</option>
-            <option value="Persona Física">Persona Física</option>
-            <option value="Persona Jurídica">Persona Jurídica</option>
+            @foreach (var tipo in tipos)
+            {
+                <option value="@tipo.Nombre">@tipo.Nombre</option>
+            }
         </InputSelect>
         <ValidationMessage For="@(() => nuevoContribuyente.Tipo)" />
     </div>
@@ -46,8 +51,10 @@
         <label>Estado:</label>
         <InputSelect @bind-Value="nuevoContribuyente.Estatus" class="form-control">
             <option value="">Seleccione</option>
-            <option value="Persona Inactiva">Persona Inactiva</option>
-            <option value="Persona activa">Persona activa</option>
+            @foreach (var estado in estados)
+            {
+                <option value="@estado.Nombre">@estado.Nombre</option>
+            }
         </InputSelect>
         <ValidationMessage For="@(() => nuevoContribuyente.Estatus)" />
     </div>
@@ -76,6 +83,8 @@
 }
 
 @code {
+    private List<Entities.Tipo> tipos = new();
+    private List<Entities.Estatus> estados = new();
     private Contribuyente nuevoContribuyente = new();
     public List<Contribuyente> contribuyentes = new();
     private string mensaje = "";
@@ -94,6 +103,12 @@
         NavigationManager.NavigateTo("/weather");
     }
 
+    protected override async Task OnInitializedAsync()
+    {
+        tipos = await tipoRepository.Listar();
+        estados = await estatusRepository.Listar();
+    }
+
     private void AgregarNuevoContribuyente()
     {
         contribuyentes.Add(new Contribuyente
@@ -104,13 +119,32 @@
         Estatus = nuevoContribuyente.Estatus
     });
 
-    // Reiniciar el objeto nuevoContribuyente
-    nuevoContribuyente = new();
-}
+        // Reiniciar el objeto nuevoContribuyente
+        nuevoContribuyente = new();
+    }
 
-private void MostrarMensaje(string mensajeTexto)
-{
-    mensaje = mensajeTexto;
-    mostrarMensaje = true;
+    private void MostrarMensaje(string mensajeTexto)
+    {
+        mensaje = mensajeTexto;
+        mostrarMensaje = true;
+    }
+    @code
+    {
+        public class Contribuyente
+        {
+            [Required(ErrorMessage = "El nombre es obligatorio.")]
+            [StringLength(20, ErrorMessage = "El nombre no puede tener más de 20 caracteres.")]
+            public string Nombre { get; set; }
+
+            [Required(ErrorMessage = "El rnc/cédula es obligatorio.")]
+            [RegularExpression(@"^\d{10}$", ErrorMessage = "Debe ingresar exactamente 10 dígitos.")]
+            public string RncCedula { get; set; }
+
+            [Required(ErrorMessage = "El tipo es obligatorio.")]
+            public string Tipo { get; set; }
+
+            [Required(ErrorMessage = "El estado es obligatorio.")]
+            public string Estatus { get; set; }
+        }
 }
 }
